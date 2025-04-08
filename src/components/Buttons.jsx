@@ -1,5 +1,11 @@
+import { useState } from "react";
+import Card from "./Card"
+
+
 export default function buttons(props) {
     const languages = props.languages;
+
+    const [click, setDetails] = useState(null)
     return (
         <>
             {
@@ -7,6 +13,7 @@ export default function buttons(props) {
                     <button key={element.id} onClick={() => setDetails(element)} >{element.title}</button>
                 )
             }
+            < Card click={click} />
         </>
     )
 }

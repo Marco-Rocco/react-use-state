@@ -7,7 +7,6 @@ export default function Main() {
         <>
             <main>
                 <Buttons languages={languages} />
-                <Card />
             </main>
         </>
     )
