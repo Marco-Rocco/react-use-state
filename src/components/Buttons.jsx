@@ -5,15 +5,16 @@ import Card from "./Card"
 export default function buttons(props) {
     const languages = props.languages;
 
-    const [click, setDetails] = useState(null)
+    const [details, setDetails] = useState(null);
     return (
+
         <>
             {
                 languages.map(element =>
                     <button key={element.id} onClick={() => setDetails(element)} >{element.title}</button>
                 )
             }
-            < Card click={click} />
+            < Card details={details} />
         </>
     )
 }
