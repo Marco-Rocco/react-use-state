@@ -1,5 +1,9 @@
 export default function Card(details) {
-    const element = details.details
+
+    const element = details.details;
+    if (element) {
+        console.log('showing info for ' + element.title)
+    }
     return (
 
 

@@ -5,7 +5,7 @@ import Card from "./Card"
 export default function buttons(props) {
     const languages = props.languages;
 
-    const [details, setDetails] = useState(null);
+    const [details, setDetails] = useState(undefined);
     return (
 
         <>
